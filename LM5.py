@@ -247,7 +247,7 @@ st.write(hmap_fig)
 
 
 #PARAGRAPH: ESTIMATION OF NEW PARAMETERS
-EstimatedParameters= pd.read_excel(r'C:\Users\gabriele.maccioni\OneDrive - Prima Industrie\Desktop\Documents\Data analysis 2023\WebAPP\Estimated parameters_ok.xlsx')
+EstimatedParameters= pd.read_excel('Estimated parameters_ok.xlsx')
 st.title("V) Previsional model for unknown parameters (draft version)")
 EstimatedParameters = EstimatedParameters.reset_index(drop=True)
 corr_xEP = st.selectbox("Correlation - X variable", options=EstimatedParameters.columns, index=EstimatedParameters.columns.get_loc("Thickness[mm]"))
